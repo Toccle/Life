@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="listOfWorkers" prefHeight="139.0" prefWidth="600.0">
+        <columns>
+          <TableColumn minWidth="0.0" prefWidth="32.0" text="id" />
+          <TableColumn prefWidth="283.0" text="name" />
+            <TableColumn minWidth="0.0" prefWidth="284.0" text="savings" />
+        </columns>
+      </TableView>
+      <TextField fx:id="salary" layoutX="20.0" layoutY="148.0" prefHeight="25.0" prefWidth="376.0" promptText="salary" />
+      <Button fx:id="getSalary" layoutX="410.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="get salary" textAlignment="CENTER" />
+      <TextField fx:id="costOfFood" layoutX="20.0" layoutY="188.0" prefHeight="25.0" prefWidth="376.0" promptText="cost of food" />
+      <Button fx:id="buyFood" layoutX="410.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="buy food" />
+      <Button fx:id="goToBar" layoutX="410.0" layoutY="228.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="go to bar" />
+      <Button fx:id="addNewWorker" layoutX="20.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="add new worker" />
+      <Button fx:id="resign" layoutX="410.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="resign" />
+      <Label fx:id="barDescription" alignment="CENTER" layoutX="20.0" layoutY="232.0" prefHeight="17.0" prefWidth="376.0" text="going to a bar and spend some money (500 - 3 000)">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </children>
+</AnchorPane>
